@@ -1,0 +1,154 @@
+/* Segundo Projeto - by Isabelli Cristina Mocci */
+
+
+/*----------------------------------------------
+Índice   
+------------------------------------------------
+01. charset type
+02. font import
+03. global var
+04. reset
+05. header style
+06. main style
+07. img config
+08. footer
+--------------------------------------------- */
+
+/* 
+---------------------------------------------
+01. charset type
+--------------------------------------------- 
+*/
+@charset "UTF-8";
+/* 
+---------------------------------------------
+02. font import
+--------------------------------------------- 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+/* 
+---------------------------------------------
+03. global var
+--------------------------------------------- 
+*/
+:root {
+    /* Paleta de cores */
+    --color-header: #363636;
+    --color-main: ivory;
+    --color-text: #222;
+
+    /* Tipografia */
+    --font-family-autor: Verdana, sans-serif;
+    --font-family-cordel: 'Sriracha', cursive;
+    --font-family-destaque: 'Passion One', cursive;
+}
+
+/* 
+---------------------------------------------
+04. reset
+--------------------------------------------- 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box font-size: 1em
+}
+
+html,
+body {
+    min-height: 100vh;
+    color: var(--color-text);
+}
+
+/* 
+---------------------------------------------
+05. header style
+--------------------------------------------- 
+*/
+header {
+    background-color: var(--color-header);
+    text-align: center;
+    color: var(--color-main);
+    padding: 55px 0;
+}
+
+h1 {
+    font-family: var(--font-family-destaque);
+    font-size: clamp(2.5rem, 10vw, 6rem);
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: var(--font-family-autor);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 
+---------------------------------------------
+06. main style
+--------------------------------------------- 
+*/
+main {
+    background-color: var(--color-main);
+    font-family: var(--font-family-cordel);
+    font-size: 3.5vw;
+    line-height: 2em;
+}
+
+section {
+    padding: 12vh 30px 15vh;
+}
+
+.image {
+    background-color: var(--color-header);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.47);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right center;
+}
+
+.image>p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+/* 
+---------------------------------------------
+07. img config
+--------------------------------------------- 
+*/
+#img01 {
+    background-image: url(../files/img/background001.jpg);
+}
+
+#img02 {
+    background-image: url(../files/img/background002.jpg);
+}
+
+/* 
+---------------------------------------------
+08. footer
+--------------------------------------------- 
+*/
+
+footer {
+    background-color: var(--color-header);
+    font-family: var(--font-family-autor);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}   
