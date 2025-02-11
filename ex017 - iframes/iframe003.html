@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de Iframe II</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+
+        iframe {
+            width: 95vw;
+            height: 500px;
+            display: block;
+            margin: auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Reproduzindo páginas diferentes no iframe ao clicar:</h1>
+    <h2>Faça uma escolha</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Numquam, blanditiis similique! Perspiciatis, sapiente tempora? Exercitationem reprehenderit eveniet fuga
+        rem consectetur maxime molestiae cupiditate voluptas accusamus error.</p>
+
+    <ul>
+        <li><a href="pages/page001.html" target="frame">Primeira página</a></li>
+        <li><a href="pages/page002.html" target="frame">Segunda página</a></li>
+        <li><a href="pages/page003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Numquam, blanditiis similique! Perspiciatis, sapiente tempora? Exercitationem reprehenderit eveniet fuga
+        rem consectetur maxime molestiae cupiditate voluptas accusamus error, consequatur vero minus libero. Hic,
+        voluptatum autem numquam consequatur aut eos magni, accusantium labore, nihil corrupti dolor blanditiis. Tenetur
+        modi veniam iusto fugit rem. Asperiores, numquam.</p>
+
+    <iframe name="frame" src="pages/page001.html" frameborder="0">
+        <p>Infelizmente seu navegador não é compatível.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Numquam, blanditiis similique! Perspiciatis, sapiente tempora? Exercitationem reprehenderit eveniet fuga
+        rem consectetur maxime molestiae cupiditate voluptas accusamus error, consequatur vero minus libero. Hic,
+        voluptatum autem numquam consequatur aut eos magni, accusantium labore, nihil corrupti dolor blanditiis. Tenetur
+        modi veniam iusto fugit rem. Asperiores, numquam.</p>
+</body>
+
+</html>
