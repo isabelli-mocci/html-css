@@ -4,16 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segunda página</title>
+    <title>Design Gráfico: Um Mundo de Criatividade</title>
     <style>
-        body{
-            background-color: rgba(224, 167, 167, 0.61);
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #00796b;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 
 <body>
-    <h1>Segunda página</h1>
+    <header>
+        <h1>Design Gráfico: Um Mundo de Criatividade</h1>
+    </header>
+
+    <section>
+        <h2>O que é Design Gráfico?</h2>
+        <p>Design gráfico é uma área da comunicação visual que trabalha com a criação de imagens, textos e layouts para transmitir uma mensagem. Pode ser encontrado em tudo, desde a publicidade até sites e aplicativos.</p>
+
+        <h2>Principais Ferramentas</h2>
+        <p>Os designers gráficos usam ferramentas como o Adobe Photoshop, Illustrator e Figma para criar peças visuais que encantam e comunicam.</p>
+
+        <h2>Exemplos de Design Gráfico</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200.png?text=Design+1" alt="Design 1">
+            <img src="https://via.placeholder.com/300x200.png?text=Design+2" alt="Design 2">
+            <img src="https://via.placeholder.com/300x200.png?text=Design+3" alt="Design 3">
+        </div>
+    </section>
 </body>
 
 </html>

@@ -1,6 +1,3 @@
-/* Segundo Projeto - by Isabelli Cristina Mocci */
-
-
 /*----------------------------------------------
 Índice   
 ------------------------------------------------
@@ -20,6 +17,7 @@
 --------------------------------------------- 
 */
 @charset "UTF-8";
+
 /* 
 ---------------------------------------------
 02. font import
@@ -34,9 +32,11 @@
 */
 :root {
     /* Paleta de cores */
-    --color-header: #363636;
-    --color-main: ivory;
-    --color-text: #222;
+    --color-header: #222222;
+    --color-main: #f4f4f4;
+    --color-text: #444;
+    --color-link: #008080;
+    --color-hover: #00b3b3;
 
     /* Tipografia */
     --font-family-autor: Verdana, sans-serif;
@@ -59,7 +59,10 @@
 html,
 body {
     min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-main);
     color: var(--color-text);
+    line-height: 1.6;
 }
 
 /* 
@@ -69,28 +72,34 @@ body {
 */
 header {
     background-color: var(--color-header);
+    color: white;
     text-align: center;
-    color: var(--color-main);
-    padding: 55px 0;
+    padding: 3rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     font-family: var(--font-family-destaque);
-    font-size: clamp(2.5rem, 10vw, 6rem);
-    font-variant: small-caps;
+    font-size: 4rem;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h2 {
     font-family: var(--font-family-autor);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--color-link);
+    transition: color 0.3s;
 }
 
 a:hover {
+    color: var(--color-hover);
     text-decoration: underline;
 }
 
@@ -100,56 +109,83 @@ a:hover {
 --------------------------------------------- 
 */
 main {
-    background-color: var(--color-main);
-    font-family: var(--font-family-cordel);
-    font-size: 3.5vw;
-    line-height: 2em;
+    padding: 3rem 2rem;
 }
 
 section {
-    padding: 12vh 30px 15vh;
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
 }
 
-.image {
-    background-color: var(--color-header);
-    color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.47);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: right center;
+.standard {
+    background-color: #fefefe;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.image>p {
-    display: inline-block;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.514);
-    text-shadow: 1px 1px 0px black;
+p {
+    font-family: var(--font-family-cordel);
+    font-size: 1.2rem;
+    color: var(--color-text);
+    line-height: 1.8;
 }
 
 /* 
 ---------------------------------------------
-07. img config
+07. image config
 --------------------------------------------- 
 */
+.image {
+    background-color: var(--color-header);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image p {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f4f4f4c9;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 #img01 {
     background-image: url(../files/img/background001.jpg);
 }
 
 #img02 {
     background-image: url(../files/img/background002.jpg);
-}
+}   
 
 /* 
 ---------------------------------------------
 08. footer
 --------------------------------------------- 
 */
-
 footer {
     background-color: var(--color-header);
-    font-family: var(--font-family-autor);
     color: white;
+    padding: 1.5rem;
     text-align: center;
-    padding: 10px;
-}   
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: var(--color-link);
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--color-hover);
+    text-decoration: underline;
+}

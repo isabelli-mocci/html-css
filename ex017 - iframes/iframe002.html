@@ -6,32 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe II</title>
     <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            color: #00796b;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        hr {
+            width: 50%;
+            border: none;
+            height: 3px;
+            background: #008080;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 20px auto;
+            width: 80%;
+            text-align: justify;
+        }
+
         iframe {
-            width: 600px;
+            width: 100%;
+            max-width: 600px;
             height: 500px;
+            border: 2px solid #00796b;
+            border-radius: 8px;
+            margin: 20px auto;
             display: block;
-            margin: auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe p {
+            color: #00796b;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #00796b;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Media query para garantir responsividade */
+        @media (max-width: 768px) {
+            iframe {
+                width: 95%;
+                height: auto;
+            }
         }
     </style>
 </head>
 
 <body>
-    <h1>Teste com iframe de link interno</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Numquam, blanditiis similique! Perspiciatis, sapiente tempora? Exercitationem reprehenderit eveniet fuga
-        rem consectetur maxime molestiae cupiditate voluptas accusamus error, consequatur vero minus libero. Hic,
-        voluptatum autem numquam consequatur aut eos magni, accusantium labore, nihil corrupti dolor blanditiis. Tenetur
-        modi veniam iusto fugit rem. Asperiores, numquam.</p>
+    <div class="container">
+        <h1>Teste com iframe de link interno</h1>
+        <hr>
 
-    <iframe src="pages/page001.html" frameborder="0">
-        <p>Infelizmente seu navegador não é compatível.</p>
-    </iframe>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, blanditiis similique! Perspiciatis, sapiente tempora? Exercitationem reprehenderit eveniet fuga rem consectetur maxime molestiae cupiditate voluptas accusamus error, consequatur vero minus libero. Hic, voluptatum autem numquam consequatur aut eos magni, accusantium labore, nihil corrupti dolor blanditiis. Tenetur modi veniam iusto fugit rem. Asperiores, numquam.</p>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Numquam, blanditiis similique! Perspiciatis, sapiente tempora? Exercitationem reprehenderit eveniet fuga
-        rem consectetur maxime molestiae cupiditate voluptas accusamus error, consequatur vero minus libero. Hic,
-        voluptatum autem numquam consequatur aut eos magni, accusantium labore, nihil corrupti dolor blanditiis. Tenetur
-        modi veniam iusto fugit rem. Asperiores, numquam.</p>
+        <!-- Iframe com link interno -->
+        <iframe src="pages/page001.html" frameborder="0">
+            <p>Infelizmente, seu navegador não é compatível com a exibição de iframes. Tente acessar diretamente o conteúdo através deste <a href="pages/page001.html" target="_blank">link</a>.</p>
+        </iframe>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, blanditiis similique! Perspiciatis, sapiente tempora? Exercitationem reprehenderit eveniet fuga rem consectetur maxime molestiae cupiditate voluptas accusamus error, consequatur vero minus libero. Hic, voluptatum autem numquam consequatur aut eos magni, accusantium labore, nihil corrupti dolor blanditiis. Tenetur modi veniam iusto fugit rem. Asperiores, numquam.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Belli Fairytales. Todos os direitos reservados.</p>
+    </footer>
 </body>
 
 </html>

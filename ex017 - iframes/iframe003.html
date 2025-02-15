@@ -6,26 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de Iframe II</title>
     <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #00796b;
+            text-align: center;
+        }
+
+        hr {
+            width: 50%;
+            border: none;
+            height: 3px;
+            background: #008080;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
         p {
             text-align: justify;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00796b;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 2px solid #00796b;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #00796b;
+            color: white;
         }
 
         iframe {
             width: 95vw;
             height: 500px;
             display: block;
-            margin: auto;
-            border: 1px solid black;
+            margin: 20px auto;
+            border: 2px solid #00796b; /* cor teal */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe p {
+            color: #00796b;
+            text-align: center;
+            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
-    <h1>Reproduzindo páginas diferentes no iframe ao clicar:</h1>
-    <h2>Faça uma escolha</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Numquam, blanditiis similique! Perspiciatis, sapiente tempora? Exercitationem reprehenderit eveniet fuga
-        rem consectetur maxime molestiae cupiditate voluptas accusamus error.</p>
+    <h1>Explorando páginas com o iframe!</h1>
+    <hr>
+    <h2>Selecione uma página:</h2>
 
     <ul>
         <li><a href="pages/page001.html" target="frame">Primeira página</a></li>
@@ -33,21 +90,13 @@
         <li><a href="pages/page003.html" target="frame">Terceira página</a></li>
     </ul>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Numquam, blanditiis similique! Perspiciatis, sapiente tempora? Exercitationem reprehenderit eveniet fuga
-        rem consectetur maxime molestiae cupiditate voluptas accusamus error, consequatur vero minus libero. Hic,
-        voluptatum autem numquam consequatur aut eos magni, accusantium labore, nihil corrupti dolor blanditiis. Tenetur
-        modi veniam iusto fugit rem. Asperiores, numquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, blanditiis similique! Perspiciatis, sapiente tempora? Exercitationem reprehenderit eveniet fuga rem consectetur maxime molestiae cupiditate voluptas accusamus error, consequatur vero minus libero. Hic, voluptatum autem numquam consequatur aut eos magni, accusantium labore, nihil corrupti dolor blanditiis. Tenetur modi veniam iusto fugit rem. Asperiores, numquam.</p>
 
     <iframe name="frame" src="pages/page001.html" frameborder="0">
-        <p>Infelizmente seu navegador não é compatível.</p>
+        <p>Infelizmente, seu navegador não é compatível com a exibição de iframes. Tente acessar diretamente o conteúdo através deste <a href="pages/page001.html" target="_blank">link</a>.</p>
     </iframe>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit. Numquam, blanditiis similique! Perspiciatis, sapiente tempora? Exercitationem reprehenderit eveniet fuga
-        rem consectetur maxime molestiae cupiditate voluptas accusamus error, consequatur vero minus libero. Hic,
-        voluptatum autem numquam consequatur aut eos magni, accusantium labore, nihil corrupti dolor blanditiis. Tenetur
-        modi veniam iusto fugit rem. Asperiores, numquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, blanditiis similique! Perspiciatis, sapiente tempora? Exercitationem reprehenderit eveniet fuga rem consectetur maxime molestiae cupiditate voluptas accusamus error, consequatur vero minus libero. Hic, voluptatum autem numquam consequatur aut eos magni, accusantium labore, nihil corrupti dolor blanditiis. Tenetur modi veniam iusto fugit rem. Asperiores, numquam.</p>
 </body>
 
 </html>

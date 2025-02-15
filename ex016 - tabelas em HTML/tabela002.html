@@ -6,61 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
+       body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
 
+h1 {
+    text-align: center;
+    color: #008080;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+hr {
+            width: 50%;
+            border: none;
+            height: 3px;
+            background: #008080;
+            margin: 20px auto;
+            border-radius: 5px;
         }
 
-        table {
-            width: 500px;
-            border-collapse: collapse;
-            position: relative;
-        }
+table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
 
-        td,
-        th {
-            border: 1px solid black;
-            padding: 10px;
-        }
+table:hover {
+    transform: scale(1.02);
+}
 
-        caption {
-            font-size: 1.5em;
-            font-weight: bold;
-            padding: 10px;
-            background-color: lightgray;
-            border: 1px solid black;
-        }
+caption {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 12px;
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    border: 1px solid #006f65;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
 
-        thead,
-        tfoot {
-            background-color: #383838;
-            color: white;
-        }
+thead {
+    background-color: #1a1a1a;
+    color: #fff;
+}
 
-        thead>tr>th {
-            position: sticky;
-            top: -1px;
-            background-color: #383838;
-        }
+thead th {
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: left;
+}
 
-        tbody>tr:nth-child(odd) {
-            /* 2n-1 */
-            background-color: white;
-        }
+tbody {
+    background-color: #fafafa;
+}
 
-        tbody>tr:nth-child(even) {
-            /* 2n */
-            background-color: lightgray;
-        }
+tbody tr {
+    transition: background-color 0.3s ease;
+}
 
-        td.num {
-            text-align: right;
-        }
+tbody tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0; 
+}
+
+td,
+th {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+td.num {
+    text-align: right;
+    font-weight: bold;
+}
+
+tfoot {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+tfoot th {
+    font-weight: normal;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    caption {
+        font-size: 1.2rem;
+    }
+
+    td, th {
+        padding: 8px;
+    }
+}
+
     </style>
 </head>
 
 <body>
     <h1>Uso de tabelas grandes</h1>
+    <hr>
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
