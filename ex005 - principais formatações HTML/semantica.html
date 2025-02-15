@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Semântica</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #008080;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        hr {
+            width: 60%;
+            border: 1px solid #008080;
+            margin: 1px auto;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #34495e;
+            margin: 20px;
+            text-align: center;
+        }
+
+        address {
+            font-style: italic;
+            font-size: 1.3em;
+            color: #008080;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .address-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-top: 20px;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .marquee {
+            font-size: 1.5em;
+            color: #aa9fd1;
+            font-weight: bold;
+            margin-top: 30px;
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de Semântica</h1>
+    <hr>
+
+    <div class="address-box">
+        <p>
+            Eu moro na
+        <address>Rua dos Capixabas, 229 - Botafogo - RJ</address>
+        </p>
+    </div>
+
+    <div class="marquee">
+        Teste de Marquee
+    </div>
+</body>
+
+</html>

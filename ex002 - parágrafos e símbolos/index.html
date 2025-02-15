@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #008080;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        hr {
+            width: 50%;
+            border: 1px solid #008080;
+            margin: 20px auto;
+        }
+
+        pre,
+        blockquote {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            width: 100%;
+            max-width: 600px;
+            margin: 15px auto;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #008080;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Parágrafos, Formatações & Símbolos</h1>
+        <hr>
+
+        <div class="box">
+            <p>Você pode escrever um parágrafo de qualquer jeito. Basta colocar tudo no meio do par de tags &lt;p&gt; e
+                &lt;/p&gt;</p>
+        </div>
+
+        <div class="box">
+            <p>Se precisar quebrar um texto específico <br> como esse, você pode usar a tag &lt;br&gt;</p>
+        </div>
+
+        <div class="box">
+            <p>Exemplos de alguns símbolos especiais: &reg; &copy; &euro; &yen; &pound; &cent; &Delta; &Omega;</p>
+        </div>
+
+        <div class="box">
+            <p>Exemplos de alguns emojis: &#x2728; &#x1F3A0; &#x1F600; &#x1F525; &#x1F680; &#x1F33B;</p>
+        </div>
+
+        <h2>Explicação sobre Outras Tags HTML Relacionadas</h2>
+        <p><strong>&lt;pre&gt;</strong>: Usada para exibir texto pré-formatado.</p>
+        <pre>
+            <code>
+function exemplo() {
+    console.log("Texto pré-formatado!");
+}
+            </code>
+        </pre>
+
+        <p><strong>&lt;code&gt;</strong>: Para trechos de código inline.</p>
+        <pre>
+    <code>console.log("Este é um exemplo de código!");</code>
+        </pre>
+
+        <p><strong>&lt;blockquote&gt;</strong>: Para citações destacadas.</p>
+        <blockquote cite="https://www.exemplo.com">
+            "A inovação é a chave para o futuro." - Anônimo
+        </blockquote>
+
+        <h2>Tabelinha de Caracteres e Emojis</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Exemplo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Moedas</td>
+                    <td>&#x20AC; &#x00A3; &#x20B9;</td>
+                </tr>
+                <tr>
+                    <td>Setas</td>
+                    <td>&#x2190; &#x2192; &#x2191; &#x2193;</td>
+                </tr>
+                <tr>
+                    <td>Matemática</td>
+                    <td>&#x03B4; &#x2205; &#x03C0;</td>
+                </tr>
+                <tr>
+                    <td>Emojis</td>
+                    <td>&#x1F600; &#x1F60D; &#x1F609;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

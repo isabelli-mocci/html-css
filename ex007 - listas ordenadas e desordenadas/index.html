@@ -5,81 +5,207 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1f1f1;
+            color: #333;
+            padding: 50px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            text-align: center;
+            color: #008080;
+            font-size: 2.5em;
+        }
+
+        h2 {
+
+            color: #008080;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            width: 50%;
+            border: none;
+            height: 3px;
+            background: #008080;
+            margin: 2px auto;
+            border-radius: 5px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+            border: 1px solid #ccc; 
+        }
+
+        ol, ul, dl {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-left: 20px;
+            list-style-position: inside;
+            margin-bottom: 20px;
+        }
+
+        li {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 12px;
+            text-align: left;
+            line-height: 1.6;
+        }
+
+        dt {
+            font-weight: bold;
+            color: #008080;
+        }
+
+        dd {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        ol {
+            list-style-type: lower-roman;
+        }
+
+        ol[type="a"] {
+            list-style-type: lower-alpha;
+        }
+
+        ul[type="square"] {
+            list-style-type: square;
+        }
+
+        ul[type="circle"] {
+            list-style-type: circle;
+        }
+
+        blockquote {
+            font-style: italic;
+            color: #555;
+            background: #e0e0e0;
+            padding: 20px;
+            border-left: 5px solid #008080;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+    
+        ol, ul {
+            display: block;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+
+    
+        ol, ul {
+            padding-left: 30px;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Trabalhando com Listas</h1>
+    <hr>
+
     <h2>Listas Ordenadas</h2>
-    <ol type="i"> <!-- 1 A a I i -->
-        <li>Acordar</li>
-        <li>Ligar para o João</li>
-        <li>Tomar café</li>
-        <li>Escovar os dentes</li>
-        <li>Ir para a faculdade</li>
-        <li>Almoçar</li>
-        <li>Ir para o trabalho</li>
-        <li>Voltar para casa</li>
-        <li>Jantar</li>
-        <li>Dormir</li>
-    </ol>
+    <div class="box">
+        <ol type="i">
+            <li>Acordar</li>
+            <li>Ligar para o João</li>
+            <li>Tomar café</li>
+            <li>Escovar os dentes</li>
+            <li>Ir para a faculdade</li>
+            <li>Almoçar</li>
+            <li>Ir para o trabalho</li>
+            <li>Voltar para casa</li>
+            <li>Jantar</li>
+            <li>Dormir</li>
+        </ol>
+    </div>
+
     <h2>Listas não Ordenadas</h2>
-    <ul type="square"> <!-- disc circle square -->
-        <li>Pão</li>
-        <li>Leite</li>
-        <li>Tomate</li>
-        <li>Alface</li>
-        <li>Manteiga</li>
-        <li>Arroz</li>
-        <li>Feijão</li>
-    </ul>
+    <div class="box">
+        <ul type="square">
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Tomate</li>
+            <li>Alface</li>
+            <li>Manteiga</li>
+            <li>Arroz</li>
+            <li>Feijão</li>
+        </ul>
+    </div>
+
     <h2>Minhas linguagens favoritas</h2>
-    <ol>
-        <li>Antigas</li>
-        <ol type="a">
-            <li>Clipper</li>
-            <li>Visual Basic</li>
-            <li>Fortran</li>
-            <li>Delphi</li>
+    <div class="box">
+        <ol>
+            <li>Antigas
+                <ol type="a">
+                    <li>Clipper</li>
+                    <li>Visual Basic</li>
+                    <li>Fortran</li>
+                    <li>Delphi</li>
+                </ol>
+            </li>
+            <li>Novas
+                <ol type="a" start="5">
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Kotlin</li>
+                </ol>
+            </li>
         </ol>
-        <li>Novas</li>
-        <ol type="a" start="5">
-            <li>PHP</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>Kotlin</li>
-        </ol>
-    </ol>
+    </div>
+
     <h2>Meus jogos favoritos</h2>
-    <ol>
-        <li>NES</li>
-        <ul type="square">
-            <li>Mario Bros</li>
-            <ul type="circle">
-                <li>Mario Bros 3</li>
-                <li>Mario: Lost Levels</li>
-            </ul>
-            <li>Ninja Gaiden</li>
-        </ul>
-        <li>SNES</li>
-        <ul type="square">
-            <li>Mario</li>
-            <li>Donkey Kong</li>
-        </ul>
-        <li>PlayStation</li>
-        <ul type="square">
-            <li>Final Fantasy</li>
-            <li>Castlevania</li>
-        </ul>
-    </ol>
+    <div class="box">
+        <ol>
+            <li>NES
+                <ul type="square">
+                    <li>Mario Bros</li>
+                    <ul type="circle">
+                        <li>Mario Bros 3</li>
+                        <li>Mario: Lost Levels</li>
+                    </ul>
+                    <li>Ninja Gaiden</li>
+                </ul>
+            </li>
+            <li>SNES
+                <ul type="square">
+                    <li>Mario</li>
+                    <li>Donkey Kong</li>
+                </ul>
+            </li>
+            <li>PlayStation
+                <ul type="square">
+                    <li>Final Fantasy</li>
+                    <li>Castlevania</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
     <h2>Lista de Definições</h2>
-    <dl>
-        <dt>HTML</dt>
-        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
-        <dt>CSS</dt>
-        <dd>Linguagem de marcação para a criação do design de um site.</dd>
-        <dt>JavaScript</dt>
-        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
-    </dl>
+    <div class="box">
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação para a criação do design de um site.</dd>
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+        </dl>
+    </div>
 </body>
 
 </html>

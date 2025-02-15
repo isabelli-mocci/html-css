@@ -6,22 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Imagens e Favicon</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(120deg, #f5f7fa, #dff1ff);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            color: #008080;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        hr {
+            width: 60%;
+            border: none;
+            height: 3px;
+            background: #008080;
+            margin: 30px auto;
+            border-radius: 5px;
+        }
+
+        .container {
+            background: white;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        img {
+            min-width: 40px;
+            max-height: 250px;
+            border-radius: 8px;
+            background: white;
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Testando carga de imagens</h1>
+    <h1>Testando Carga de Imagens</h1>
     <hr>
-    <p>Carregando imagem localizada na mesma pasta:</p>
-    <br>
-    <img src="logo-html.png" alt="Logo do HTML5">
 
-    <p>Carregando imagem localizada em outra pasta:</p>
-    <br>
-    <img src="imagens/logo-css.png" alt="Logo do CSS3">
+    <div class="container">
+        <p>Carregando imagem localizada na mesma pasta:</p>
+        <img src="imagens/logo-html.png" alt="Logo do HTML5">
+    </div>
 
-    <p>Carregando imagem externa (diretamento de um site) usando a URL completa:</p>
-    <br>
-    <img src="https://i.pinimg.com/736x/3d/43/02/3d43022040cff5074ebe1cd483fcdfe4.jpg" alt="Logo do JavaScript">
+    <div class="container">
+        <p>Carregando imagem localizada em outra pasta:</p>
+        <img src="imagens/logo-css.png" alt="Logo do CSS3">
+    </div>
+
+    <div class="container">
+        <p>Carregando imagem externa (diretamente de um site) usando a URL completa:</p>
+        <img src="https://i.pinimg.com/736x/3d/43/02/3d43022040cff5074ebe1cd483fcdfe4.jpg" alt="Logo do JavaScript">
+    </div>
 </body>
 
 </html>

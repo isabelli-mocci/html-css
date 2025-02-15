@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        /* Estilo geral do corpo da página */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            margin: 0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Cabeçalho principal */
+        h1 {
+            font-size: 3em;
+            color: #008080;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo para subtítulos */
+        h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            margin-top: 30px;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+
+        /* Estilo para parágrafos */
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        /* Estilo para marcação */
+        mark {
+            background-color: #98c379;
+            color: white;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 5px;
+        }
+
+        /* Estilo para negrito (b) */
+        b {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        /* Estilo para texto em destaque (strong) */
+        strong {
+            font-weight: bold;
+            color: #e67e22;
+        }
+
+        /* Estilo para itálico (i) */
+        i {
+            font-style: italic;
+            color: #9b59b6;
+        }
+
+        /* Estilo para ênfase (em) */
+        em {
+            font-style: italic;
+            color: #2ecc71;
+        }
+
+        /* Estilo para texto deletado (del) */
+        del {
+            text-decoration: line-through;
+            color: #95a5a6;
+        }
+
+        /* Estilo para texto inserido (ins) */
+        ins {
+            text-decoration: underline;
+            color: #16a085;
+        }
+
+        /* Estilo para sublinhado (u) */
+        u {
+            text-decoration: underline;
+            color: #f39c12;
+        }
+
+        /* Estilo para sobrescrito (sup) */
+        sup {
+            font-size: 0.8em;
+            vertical-align: super;
+            color: #34495e;
+        }
+
+        /* Estilo para subscrito (sub) */
+        sub {
+            font-size: 0.8em;
+            vertical-align: sub;
+            color: #34495e;
+        }
+
+        /* Caixa de destaque para cada seção */
+        .content-box {
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo para adicionar hover nos elementos */
+        mark:hover, b:hover, strong:hover, i:hover, em:hover, del:hover, ins:hover, u:hover, sup:hover, sub:hover {
+            transition: transform 0.3s ease-in-out, color 0.3s ease;
+            transform: scale(1.05);
+            color: #3498db;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+
+    <div class="content-box">
+        <h2>Negrito / Destaque</h2>
+        <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica).</p>
+        <p>Nesta frase, temos um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
+    </div>
+
+    <div class="content-box">
+        <h2>Itálico / Ênfase</h2>
+        <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica).</p>
+        <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
+    </div>
+
+    <div class="content-box">
+        <h2>Texto Marcado</h2>
+        <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK.</p>
+        <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+    </div>
+
+    <div class="content-box">
+        <h2>Texto Grande e Pequeno</h2>
+        <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+    </div>
+
+    <div class="content-box">
+        <h2>Texto Deletado</h2>
+        <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    </div>
+
+    <div class="content-box">
+        <h2>Texto Inserido</h2>
+        <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    </div>
+
+    <div class="content-box">
+        <h2>Texto Sublinhado</h2>
+        <p>Existe também o <u>sublinhado</u> com a tag U (não semântica).</p>
+    </div>
+
+    <div class="content-box">
+        <h2>Texto Sobrescrito</h2>
+        <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    </div>
+
+    <div class="content-box">
+        <h2>Texto Subscrito</h2>
+        <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+    </div>
+</body>
+</html>
