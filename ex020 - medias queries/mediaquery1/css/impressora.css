@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* Estilos para impressoras */
+
+@font-face {
+    font-family: 'PP Neue Montreal Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PP Neue Montreal Book'), url(../css/pp-neue-montreal-cufonfonts-webfont/ppneuemontreal-book.woff) format('woff');
+}
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'PP Neue Montreal Book';
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+menu {
+    display: none;
+}
+
+article {
+    width: 100%;
+}
+
+article::after {
+    content: 'Esse artigo foi impresso através do site www.mediaquery.com.br;'
+}
+
+h1,
+h2,
+menu,
+p {
+    margin: 15px;
+    text-indent: 20px;
+}
+

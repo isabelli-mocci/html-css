@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'PP Neue Montreal Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PP Neue Montreal Book'), url(../css/pp-neue-montreal-cufonfonts-webfont/ppneuemontreal-book.woff) format('woff');
+    }
+
+    
+/* Estilos para telas */
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-family: 'PP Neue Montreal Book';
+    font-size: 1em;
+    text-align: justify;
+}
+
+h1, h2, menu, p {
+    margin: 15px;
+    text-indent: 20px;
+}
