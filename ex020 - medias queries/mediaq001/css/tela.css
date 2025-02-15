@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
+
+@font-face {
+    font-family: 'PP Neue Montreal Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PP Neue Montreal Book'), url(../files/pp-neue-montreal-cufonfonts-webfont/ppneuemontreal-book.woff) format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PP Neue Montreal Book', serif;
+    font-size: 1.1em;
+    text-align: justify;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho estilo jornal */
+header {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+}
+
+header h1 {
+    font-family: 'Old Standard TT', serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav :any-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav li:hover {
+    background-color: #aaa;
+}
+
+/* Estilização do artigo */
+main {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+article {
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Imagem no artigo */
+article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Parágrafos */
+p {
+    margin-bottom: 15px;
+    text-indent: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    article {
+        width: 90%;
+    }
+}

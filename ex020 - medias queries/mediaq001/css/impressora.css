@@ -6,7 +6,7 @@
     font-family: 'PP Neue Montreal Book';
     font-style: normal;
     font-weight: normal;
-    src: local('PP Neue Montreal Book'), url(../css/pp-neue-montreal-cufonfonts-webfont/ppneuemontreal-book.woff) format('woff');
+    src: local('PP Neue Montreal Book'), url(../files/pp-neue-montreal-cufonfonts-webfont/ppneuemontreal-book.woff) format('woff');
 }
 
 * {
