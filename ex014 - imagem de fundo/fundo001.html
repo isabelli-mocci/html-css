@@ -6,29 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagem de Fundo</title>
     <style>
+        /* Resetando margens e padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            color: #008080;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        hr {
+            width: 50%;
+            border: none;
+            height: 3px;
+            background: #008080;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        /* Estilo dos quadrados */
         .quadrado {
             display: inline-block;
-            border: 2px solid black;
-            border-radius: 8px;
-            background-color: ivory;
+            border-radius: 15px;
             width: 300px;
             height: 300px;
+            margin: 20px;
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            padding: 20px;
+            font-size: 1.1em;
+            text-align: left;
+            line-height: 1.6;
+            position: relative;
+            overflow: hidden;
         }
 
+        /* Efeito de hover nos quadrados */
+        .quadrado:hover {
+            transform: scale(1.05);
+        }
+
+        /* Quadrado 1 - Cor sólida */
+        #q1 {
+            background-color: #ebf4e4;
+        }
+
+        /* Quadrado 2 - Gradiente */
         #q2 {
-            background: linear-gradient(to bottom, ivory, rgba(163, 102, 125, 0.452));
+            background: linear-gradient(to bottom, #ebf4e4, rgba(163, 102, 125, 0.6));
         }
 
+        /* Quadrado 3 - Imagem de fundo */
         #q3 {
-            background: url(img/pattern003.png);
+            background: url('img/pattern003.png');
+        }
+
+        /* Texto explicativo */
+        .quadrado p {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 1em;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.87);
+            padding: 10px;
+            border-radius: 8px;
+            width: calc(100% - 40px);
         }
     </style>
 </head>
 
 <body>
-    <div class="quadrado" id="q1"></div>
-    <div class="quadrado" id="q2"></div>
-    <div class="quadrado" id="q3"></div>
+    <h1>Testando diferentes fundos</h1>
+    <hr>
+
+    <div class="quadrado" id="q1">
+        <p><strong>Quadrado 1:</strong><br> Cor sólida de fundo (ivory). Neste quadrado, aprendemos a usar o
+            <code>background-color</code> para aplicar uma cor simples.
+        </p>
+    </div>
+
+    <div class="quadrado" id="q2">
+        <p><strong>Quadrado 2:</strong><br> Fundo com gradiente. A propriedade <code>linear-gradient</code> cria uma
+            transição suave entre cores.</p>
+    </div>
+
+    <div class="quadrado" id="q3">
+        <p><strong>Quadrado 3:</strong><br> Fundo com uma imagem. Usamos <code>background-image</code> e
+            <code>background-size: cover</code> para ajustar a imagem ao tamanho do quadrado.
+        </p>
+    </div>
+
 </body>
 
 </html>

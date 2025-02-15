@@ -6,40 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundo Centralizado</title>
     <style>
+        /* Reset geral */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, teal, #3c6ad6); 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: teal; 
         }
 
         h1 {
-            /*font-variant: small-caps;*/
+            font-size: 3em;
             text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-align: center;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
         }
 
         .container {
+            width: 80%;
+            max-width: 600px;
             height: 50vh;
-            border: 4px solid black;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
             position: relative;
-            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
         }
 
         .content {
-            margin: 0px;
             position: absolute;
-            background-color: gray;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
+            padding: 30px;
+            text-align: center;
         }
+
+        .content h1 {
+            font-size: 2.5em;
+            color: #fff;
+            text-transform: none;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.5;
+        }   	
+
+        /* Efeito de animação suave ao carregar */
+        .container {
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
     </style>
 </head>
 
 <body>
+
     <div class="container">
         <div class="content">
             <h1>Texto Centralizado</h1>
+            <p>Este texto está perfeitamente centralizado na tela, com um design moderno e elegante. Ele vai se ajustar de acordo com o tamanho da sua tela e ainda possui animações de entrada e efeitos de hover. Divirta-se explorando!</p>
         </div>
     </div>
+
 </body>
 
 </html>

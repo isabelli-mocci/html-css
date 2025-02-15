@@ -6,17 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalização de Fundo</title>
     <style>
+        /* Estilos gerais */
         body {
-            background-color: rgb(255, 255, 255);
-            font: 13pt Arial;
-            color: black;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 40px 20px;
+            text-align: center;
         }
 
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #008080;
+        }
+
+        hr {
+            width: 50%;
+            border: none;
+            height: 3px;
+            background: #008080;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #5a5a5a;
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #666;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6em;
+        }
+
+        /* Main container */
+        main {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Estilos das divs */
         div {
-            width: 90%;
-            height: 400px;
+            width: 80%;
+            max-width: 900px;
+            height: 300px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
             background-color: lightgray;
-            border: 1px solid black;
         }
 
         div#area001 {
@@ -38,24 +85,59 @@
             background-image: url('img/pattern003.png');
             background-repeat: no-repeat;
         }
+
+        /* Estilos do blockquote */
+        blockquote {
+            background-color: rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #008080;;
+            padding: 20px;
+            margin: 30px auto;
+            font-size: 1.1em;
+            max-width: 900px;
+            font-style: italic;
+            color: #444;
+            line-height: 1.6em;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        blockquote p {
+            margin: 0;
+        }
     </style>
 </head>
 
 <body>
-    <h1>Repetições em background-image</h1>
+    <h1>Repetições em <code>background-image</code></h1>
+    <hr>
 
-    <h2>background-repeat: repeat;</h2>
-    <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p>
-    <div id="area001"></div>
-    <h2>background-repeat: repeat-x;</h2>
-    <p>Repete apenas no eixo horizontal.</p>
-    <div id="area002"></div>
-    <h2>background-repeat: repeat-y;</h2>
-    <p>Repete apenas no eixo vertical.</p>
-    <div id="area003"></div>
-    <h2>background-repeat: no-repeat;</h2>
-    <p>Não repete em nenhum eixo. A imagem só é carregada uma única vez.</p>
-    <div id="area004"></div>
+    <main>
+
+        <blockquote>
+            <div id="area001"></div>
+            <h3>background-repeat: repeat;</h3>
+            <p>Repete a imagem tanto no sentido vertical, quanto horizontal (padrão).</p>
+        </blockquote>
+
+        <blockquote>
+            <div id="area002"></div>
+            <h3>background-repeat: repeat-x;</h3>
+            <p>Repete apenas no eixo horizontal.</p>
+        </blockquote>
+
+        <blockquote>
+            <div id="area003"></div>
+            <h3>background-repeat: repeat-y;</h3>
+            <p>Repete apenas no eixo vertical.</p>
+        </blockquote>
+
+        <blockquote>
+            <div id="area004"></div>
+            <h3>background-repeat: no-repeat;</h3>
+            <p>Não repete a imagem em nenhum eixo. A imagem só é carregada uma única vez.</p>
+        </blockquote>
+
+    </main>
 </body>
 
 </html>
