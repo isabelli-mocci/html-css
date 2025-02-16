@@ -4,10 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Query</title>
-                    <!-- Inserção de Media Queries: -->
+    <title>Media Query 1</title>
+
+    <!-- Inserção de Media Queries: -->
     <link rel="stylesheet" href="css/tela.css" media="screen">
     <link rel="stylesheet" href="css/impressora.css" media="print">
+
+    <style>
+        /* Ajuste do tamanho da imagem */
+        img {
+            max-width: 40%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            header {
+                text-align: center;
+            }
+
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                padding: 0;
+                list-style: none;
+            }
+
+            article {
+                padding: 10px;
+            }
+
+            img {
+                width: 80%;
+                max-width: 300px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -15,9 +51,9 @@
         <h1>Jornal Diário</h1>
         <nav>
             <ul>
-                <li>Esportes</li>
-                <li>Política</li>
-                <li>Tecnologia</li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Política</a></li>
+                <li><a href="#">Tecnologia</a></li>
             </ul>
         </nav>
     </header>
@@ -26,26 +62,19 @@
         <article>
             <h2>Estou aprendendo a criar Media Queries</h2>
 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Newspaper_1.jpg" alt="Capa de um jornal impresso">
-
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error consequuntur, magnam repellendus
-                reprehenderit eius sit voluptate in sapiente natus labore magni beatae voluptas velit aut iste, mollitia
-                amet nostrum doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore aut quia
-                doloribus placeat voluptatibus sapiente esse saepe eum magnam cumque? Voluptatum, unde provident atque
-                maiores placeat architecto libero labore nemo.</p>
+            <img src="files/newspaper-woman.jpeg" alt="Mulher lendo um jornal">
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error consequuntur, magnam repellendus
                 reprehenderit eius sit voluptate in sapiente natus labore magni beatae voluptas velit aut iste, mollitia
-                amet nostrum doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore aut quia
-                doloribus placeat voluptatibus sapiente esse saepe eum magnam cumque? Voluptatum, unde provident atque
-                maiores placeat architecto libero labore nemo.</p>
+                amet nostrum doloremque.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore aut quia doloribus placeat voluptatibus
+                sapiente esse saepe eum magnam cumque? Voluptatum, unde provident atque maiores placeat architecto
+                libero labore nemo.</p>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error consequuntur, magnam repellendus
                 reprehenderit eius sit voluptate in sapiente natus labore magni beatae voluptas velit aut iste, mollitia
-                amet nostrum doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore aut quia
-                doloribus placeat voluptatibus sapiente esse saepe eum magnam cumque? Voluptatum, unde provident atque
-                maiores placeat architecto libero labore nemo.</p>
+                amet nostrum doloremque.</p>
         </article>
     </main>
 </body>
