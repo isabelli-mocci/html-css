@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-/* configurações gerais */
-
+/* declarações gerais */
 * {
     margin: 0px;
     padding: 0px;
@@ -15,7 +14,6 @@ body {
     background-color: #233eff;
     background-repeat: no-repeat;
     background-size: contain;
-    text-align: center;
 }
 
 h1 {
@@ -30,4 +28,20 @@ h1 {
     border-radius: 10px;
     box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
     margin: 0 20px
+}
+
+/* declarações retrato */
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(img/cev-portrait.jpg);
+        background-position: center bottom;
+    }
+}
+
+/* declarações paisagem */
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(img/cev-landscape.jpg);
+        background-position: left bottom;
+    }
 }

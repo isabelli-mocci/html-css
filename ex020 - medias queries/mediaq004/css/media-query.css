@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+
+:root {
+    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --border-color: black;
+}
+
+/* Estilo da página na impressão */
+@media print {
+
+    * {
+        font-family: var(--primary-font);
+        color: var(--border-color);
+    }
+
+    body {
+        background: none;
+        margin: 1.5cm;
+        height: auto;
+    }
+
+    main {
+        width: 100%;
+        max-width: 90vw;
+        border: 2px solid var(--border-color);
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    h1 {
+        text-shadow: none;
+        color: var(--border-color);
+        text-align: center;
+        font-size: 1.8rem;
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 1rem;
+    }
+
+    main::after {
+        content: '📄 Impressão gerada a partir de www.mediaquery004.com';
+        display: block;
+        text-align: center;
+        font-size: 0.9rem;
+        font-style: italic;
+        border-top: 1px dashed var(--border-color);
+        padding-top: 5px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: url(../img/back-tablet.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../img/back-pc.jpg);
+    }
+
+    main {
+        width: 600px;
+    }
+
+    #phone,
+    #tablet {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+}
+
+/* Telas Grandes */
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../img/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #phone,
+    #tablet,
+    #pc {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+}
