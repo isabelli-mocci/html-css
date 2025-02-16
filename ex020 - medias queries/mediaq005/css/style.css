@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/* Definindo as variáveis para cores */
+:root {
+    --primary-color: #008080;
+    /* Teal */
+    --secondary-color: #004d4d;
+    /* Teal escuro */
+    --background-color: #f0f0f0;
+    /* Fundo suave e neutro */
+    --content-bg-color: #ffffff;
+    /* Cor de fundo do conteúdo */
+    --border-color: rgba(0, 0, 0, 0.1);
+    /* Cor suave para bordas */
+    --text-color: #333333;
+    /* Cor do texto */
+    --link-hover-color: #006666;
+    /* Efeito hover do link */
+}
+
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo e HTML */
+body,
+html {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--primary-color);
+    color: var(--content-bg-color);
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--secondary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título do header */
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Nav para mobile */
+#burguer {
+    padding: 15px;
+    cursor: pointer;
+    font-size: 2.3rem;
+    transition: transform 0.3s ease;
+}
+
+#burguer:hover {
+    transform: scale(1.1);
+}
+
+/* Navegação */
+nav {
+    display: none;
+}
+
+/* Links de navegação */
+a {
+    display: block;
+    padding: 14px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: var(--content-bg-color);
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito hover nos links */
+a:hover {
+    background-color: var(--secondary-color);
+    color: var(--content-bg-color);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Efeito de link ativo */
+a:active {
+    transform: translateY(-1px); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteúdo Principal */
+main {
+    background-color: var(--content-bg-color);
+    width: 90vw;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+}
+
+/* Títulos do Artigo */
+article h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* Parágrafos do Artigo */
+article p {
+    text-align: justify;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-indent: 25px;
+}
