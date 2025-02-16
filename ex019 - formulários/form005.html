@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #008080, #20B2AA);
+            padding: 20px;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 450px;
+            border-top: 5px solid #008080;
+            border-bottom: 5px solid #008080;
+        }
+
+        h1 {
+            color: #008080;
+            margin-bottom: 20px;
+        }
+
+        fieldset {
+            border: 2px solid #008080;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #006666;
+            padding: 5px 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #006666;
+            margin-left: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #008080;
+            transform: scale(1.2);
+            margin-right: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background: #008080;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            width: 48%;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background: #006666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Exemplo de Formulário</h1>
+
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Sexo</legend>
+                <p>
+                    <input type="radio" name="sexo" id="isxmas">
+                    <label for="isxmas">Masculino</label>
+                </p>
+                <p>
+                    <input type="radio" name="sexo" id="isxfem">
+                    <label for="isxfem">Feminino</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Esportes favoritos</legend>
+                <p>
+                    <input type="checkbox" name="esbas" id="iesbas">
+                    <label for="iesbas">Basquete</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="esfut" id="iesfut" checked>
+                    <label for="iesfut">Futebol</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="esnat" id="iesnat">
+                    <label for="iesnat">Natação</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="esten" id="iesten">
+                    <label for="iesten">Tênis</label>
+                </p>
+            </fieldset>
+
+            <div class="buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

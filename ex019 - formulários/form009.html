@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Cadastro</title>
+    <title>Formulário</title>
     <style>
         * {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,6 +19,7 @@
             align-items: center;
             height: 100vh;
             background: linear-gradient(135deg, #008080, #20B2AA);
+            padding: 20px;
         }
 
         .container {
@@ -34,41 +35,39 @@
         }
 
         h1 {
-            color: teal;
+            color: #008080;
             margin-bottom: 20px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
         }
 
         label {
             font-weight: bold;
-            text-align: left;
+            color: #006666;
             display: block;
-            color: teal;
-            font-size: 14px;
+            margin-bottom: 5px;
         }
 
-        input[type="text"] {
+        input[type="range"] {
             width: 100%;
-            padding: 10px;
-            border: 2px solid teal;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: 0.3s;
+            margin: 10px 0;
         }
 
-        input[type="text"]:focus {
-            border-color: #20B2AA;
-            outline: none;
-            box-shadow: 0px 0px 8px rgba(32, 178, 170, 0.5);
+        output {
+            font-size: 18px;
+            font-weight: bold;
+            color: #006666;
+            display: block;
+            margin-bottom: 15px;
         }
 
-        input[type="submit"] {
-            background: teal;
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background: #008080;
             color: white;
             padding: 12px;
             border: none;
@@ -76,9 +75,11 @@
             cursor: pointer;
             font-size: 16px;
             transition: 0.3s;
+            width: 48%;
         }
 
-        input[type="submit"]:hover {
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
             background: #006666;
         }
     </style>
@@ -86,22 +87,32 @@
 
 <body>
     <div class="container">
-        <h1>Cadastro</h1>
-
+        <h1>Exemplo de Formulário</h1>
         <form action="cadastro.php" method="post" autocomplete="on">
             <p>
-                <label for="iname">Nome</label>
-                <input type="text" name="name" id="iname" required>
+                <label for="inum">Número:</label>
+                <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="atualizarValor()">
+                <output id="ival">5</output>
             </p>
-            <p>
-                <label for="isurname">Sobrenome</label>
-                <input type="text" name="surname" id="isurname" required>
-            </p>
-            <p>
+
+            <div class="buttons">
                 <input type="submit" value="Enviar">
-            </p>
+                <input type="reset" value="Limpar" onclick="resetarValor()">
+            </div>
         </form>
     </div>
+
+    <script>
+        function atualizarValor() {
+            document.getElementById("ival").innerText = document.getElementById("inum").value;
+        }
+
+        function resetarValor() {
+            let slider = document.getElementById("inum");
+            slider.value = 5;
+            document.getElementById("ival").innerText = "5";
+        }
+    </script>
 </body>
 
 </html>

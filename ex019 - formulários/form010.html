@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Login</title>
+    <title>Formulário</title>
     <style>
         * {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
@@ -18,14 +18,15 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: linear-gradient(135deg, #008080, #20B2AA);
+            background: linear-gradient(135deg, #20B2AA, #008080);
+            padding: 20px;
         }
 
         .container {
-            background: #ffffff;
+            background-color: #ffffff;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 100%;
             max-width: 400px;
@@ -38,80 +39,80 @@
             margin-bottom: 20px;
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
         label {
             font-weight: bold;
-            text-align: left;
-            display: block;
             color: #006666;
-            font-size: 14px;
+            display: block;
+            margin-bottom: 10px;
         }
 
-        input[type="text"],
-        input[type="password"] {
+        input[type="number"],
+        output {
             width: 100%;
-            padding: 10px;
-            border: 2px solid #008080;
-            border-radius: 5px;
+            padding: 8px;
             font-size: 16px;
-            transition: 0.3s;
-        }
-
-        input:focus {
-            border-color: #20B2AA;
-            outline: none;
-            box-shadow: 0px 0px 8px rgba(32, 178, 170, 0.5);
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
         .buttons {
             display: flex;
             justify-content: space-between;
+            margin-top: 20px;
         }
 
         input[type="submit"],
         input[type="reset"] {
-            background: #008080;
+            background-color: #008080;
             color: white;
-            padding: 12px;
             border: none;
+            padding: 12px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            transition: 0.3s;
             width: 48%;
+            transition: background-color 0.3s;
         }
 
         input[type="submit"]:hover,
         input[type="reset"]:hover {
-            background: #006666;
+            background-color: #006666;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Login</h1>
-
+        <h1>Exemplo de Formulário</h1>
         <form action="cadastro.php" method="post" autocomplete="on">
+
             <p>
-                <label for="iname">Usuário</label>
-                <input type="text" name="name" id="iname" required placeholder="Seu Nome">
+                <label for="iano">Em que ano você nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2020" oninput="calcIdade()">
             </p>
 
             <p>
-                <label for="isenha">Senha</label>
-                <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Mínimo de 8 caracteres">
+                <label for="iidade">Sua idade é</label>
+                <output id="iidade">0</output>
             </p>
 
             <div class="buttons">
-                <input type="submit" value="Entrar">
-                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar" onclick="resetarIdade()">
             </div>
+
+            <script>
+                function calcIdade() {
+                    let atual = new Date().getFullYear();
+                    document.getElementById("iidade").innerHTML = atual - Number(document.getElementById("iano").value);
+                }
+
+                function resetarIdade() {
+                    document.getElementById("iidade").innerHTML = "0";
+                }
+            </script>
+
         </form>
     </div>
 </body>

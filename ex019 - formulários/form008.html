@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Login</title>
+    <title>Formulário</title>
     <style>
         * {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,6 +19,7 @@
             align-items: center;
             height: 100vh;
             background: linear-gradient(135deg, #008080, #20B2AA);
+            padding: 20px;
         }
 
         .container {
@@ -38,39 +39,34 @@
             margin-bottom: 20px;
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
         label {
             font-weight: bold;
-            text-align: left;
-            display: block;
             color: #006666;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #008080;
+            border-radius: 5px;
             font-size: 14px;
         }
 
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            border: 2px solid #008080;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-
-        input:focus {
-            border-color: #20B2AA;
-            outline: none;
-            box-shadow: 0px 0px 8px rgba(32, 178, 170, 0.5);
+        output {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            color: #006666;
+            margin-top: 10px;
         }
 
         .buttons {
             display: flex;
             justify-content: space-between;
+            margin-top: 15px;
         }
 
         input[type="submit"],
@@ -95,25 +91,41 @@
 
 <body>
     <div class="container">
-        <h1>Login</h1>
+        <h1>Exemplo de Formulário</h1>
 
         <form action="cadastro.php" method="post" autocomplete="on">
             <p>
-                <label for="iname">Usuário</label>
-                <input type="text" name="name" id="iname" required placeholder="Seu Nome">
+                <label for="in1">Número 1:</label>
+                <input type="number" name="n1" id="in1" min="0" max="50" required oninput="calcularSoma()">
             </p>
 
             <p>
-                <label for="isenha">Senha</label>
-                <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Mínimo de 8 caracteres">
+                <label for="in2">Número 2:</label>
+                <input type="number" name="n2" id="in2" min="0" max="50" required oninput="calcularSoma()">
             </p>
 
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+
             <div class="buttons">
-                <input type="submit" value="Entrar">
-                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar" onclick="resetarSoma()">
             </div>
         </form>
     </div>
+
+    <script>
+        function calcularSoma() {
+            let num1 = document.getElementById("in1").value;
+            let num2 = document.getElementById("in2").value;
+            let soma = (Number(num1) || 0) + (Number(num2) || 0);
+            document.getElementById("isoma").innerText = soma;
+        }
+
+        function resetarSoma() {
+            document.getElementById("isoma").innerText = "0";
+        }
+    </script>
 </body>
 
 </html>

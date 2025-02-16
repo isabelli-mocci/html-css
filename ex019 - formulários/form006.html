@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Cadastro</title>
+    <title>Exemplo de Formulário</title>
     <style>
         * {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,6 +19,7 @@
             align-items: center;
             height: 100vh;
             background: linear-gradient(135deg, #008080, #20B2AA);
+            padding: 20px;
         }
 
         .container {
@@ -28,47 +29,51 @@
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             text-align: center;
             width: 100%;
-            max-width: 400px;
+            max-width: 450px;
             border-top: 5px solid #008080;
             border-bottom: 5px solid #008080;
         }
 
         h1 {
-            color: teal;
+            color: #008080;
             margin-bottom: 20px;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
         }
 
         label {
             font-weight: bold;
-            text-align: left;
+            color: #006666;
+            margin-bottom: 5px;
             display: block;
-            color: teal;
-            font-size: 14px;
         }
 
-        input[type="text"] {
+        input[type="color"],
+        input[type="range"],
+        input[type="file"] {
             width: 100%;
-            padding: 10px;
-            border: 2px solid teal;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        input[type="color"] {
+            height: 50px;
+            border: none;
+            background: #e0f2f1;
             border-radius: 5px;
-            font-size: 16px;
-            transition: 0.3s;
         }
 
-        input[type="text"]:focus {
-            border-color: #20B2AA;
-            outline: none;
-            box-shadow: 0px 0px 8px rgba(32, 178, 170, 0.5);
+        input[type="range"] {
+            accent-color: #008080;
         }
 
-        input[type="submit"] {
-            background: teal;
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background: #008080;
             color: white;
             padding: 12px;
             border: none;
@@ -76,9 +81,11 @@
             cursor: pointer;
             font-size: 16px;
             transition: 0.3s;
+            width: 48%;
         }
 
-        input[type="submit"]:hover {
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
             background: #006666;
         }
     </style>
@@ -86,20 +93,28 @@
 
 <body>
     <div class="container">
-        <h1>Cadastro</h1>
+        <h1>Exemplo de Formulário</h1>
 
-        <form action="cadastro.php" method="post" autocomplete="on">
+        <form action="cadastro.php" method="get" autocomplete="on">
             <p>
-                <label for="iname">Nome</label>
-                <input type="text" name="name" id="iname" required>
+                <label for="icor">Escolha uma Cor:</label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
             </p>
+
             <p>
-                <label for="isurname">Sobrenome</label>
-                <input type="text" name="surname" id="isurname" required>
+                <label for="inivel">Nível de Satisfação:</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5">
             </p>
+
             <p>
+                <label for="ifoto">Faça Upload da Foto:</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+
+            <div class="buttons">
                 <input type="submit" value="Enviar">
-            </p>
+                <input type="reset" value="Limpar">
+            </div>
         </form>
     </div>
 </body>
