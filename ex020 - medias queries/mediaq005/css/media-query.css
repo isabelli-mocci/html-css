@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* 
+Typical Device Breakpoints
+----------------------------
+📱 Mobile Pequeno	    360px
+📱 Mobile Médio	        414px
+📱 Mobile Grande	    480px
+📱 Tablet               768px
+💻 Laptop	            1024px
+🖥 Desktop Médio        1280px
+🖥 Desktop Grande	    1440px
+🖥 4K / Ultra-Wide	    1920px+ 
+*/
+
+/* tablet */
+@media screen and (min-width:768px) {
+
+    #burguer {
+        display: none;
+    }
+
+    nav {
+        display: block;
+
+    }
+
+    a {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+    main {
+        width: 768px;
+    }
+}
