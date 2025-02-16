@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 0 solid;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -12,19 +15,61 @@
 }
 
 img {
-    width: 100vw;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
 }
 
-a {
-    display: block;
-    background-color: darkmagenta;
-    padding: 20px;
-    text-align: center;
-    font-weight: bolder;
+/* 🌸 Botão Estilizado */
+.btn-42 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    background-color: #ff2890;
+    color: #fff;
+    cursor: pointer;
     text-decoration: none;
-    color: aliceblue;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1.5em;
+    padding: .5rem 3rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 40, 144, 0.6);
 }
 
-a:hover {
-    background-color: rgb(128, 21, 110);
+/* ✨ Brilho ao passar o mouse */
+.btn-42:hover {
+    background-color: #ff007f;
+    box-shadow: 0 0 10px rgba(255, 40, 144, 0.8), 0 0 15px rgba(255, 40, 144, 0.6);
+    transform: scale(1.05);
+}
+
+/* ✨ Borda Animada */
+.btn-42:before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(1.3);
+}
+
+/* ✨ Efeito de ativação da borda */
+.btn-42:hover:before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* 💫 Efeito de texto */
+.btn-42 span {
+    mix-blend-mode: difference;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
 }
