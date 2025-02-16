@@ -64,10 +64,9 @@ Se preferir, utilize uma extensão como o **Live Server** no VS Code para visual
 
 ---
 
-## 📸 Demonstração
+## 📸 Projeto "Redes Sociais"
 
-![Preview](https://via.placeholder.com/800x400)  
-(*Adicione aqui um print do seu projeto ou uma imagem ilustrativa*)
+![web](https://github.com/user-attachments/assets/f848c83c-a734-4f9d-93d9-94fc7291d3c5)
 
 ---
 
