@@ -6,10 +6,9 @@
 ------------------------------------------------
 01. charset type
 02. global var
-04. reset
-05. main style
-06. form style
-07. img config
+03. reset
+04. img config
+05. form style
 --------------------------------------------- */
 
 /* 
@@ -21,7 +20,7 @@
 
 /* 
 ---------------------------------------------
-03. global var
+02. global var
 --------------------------------------------- 
 */
 :root {
@@ -36,7 +35,69 @@
 
 /* 
 ---------------------------------------------
-04. reset
+03. reset
 --------------------------------------------- 
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family)
+}
+
+html,
+body,
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+html,
+body {
+  background: linear-gradient(to right, #414345, #232526);
+  -webkit-linear-gradient(to right, #414345, #232526);
+}
+
+main {
+  position: absolute;
+}
+
+/* 
+---------------------------------------------
+04. img
+--------------------------------------------- 
+*/
+#imagem {
+  display: block;
+  background: url('../img/astronauta.png') no-repeat;
+  background-size: contain;
+  height: 140px;
+}
+
+/* 
+---------------------------------------------
+05. form style
+--------------------------------------------- 
+*/
+#login {
+  position: relative;
+  width: 250px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 1px 1px 10px 2px #00000086;
+  border-radius: 30px;
+}
+
+#formulario {
+  display: block;
+  padding: 10px;
+}
+
+
 
