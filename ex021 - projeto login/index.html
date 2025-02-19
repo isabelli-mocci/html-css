@@ -5,25 +5,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media-query.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
 
 </head>
 
 <body>
   <main>
     <section id="login">
-      
+
       <div id="imagem"></div>
 
-      <div id="formulario"></div>
-      <h1>entrar no dritz</h1>
-      <p>estamos felizes em ter você de volta!</p>
-      <form action="login.php" method="post">
+      <div id="formulario">
 
+        <h1>entrar no dritz</h1>
 
-      </form>
+        <p>estamos felizes em ter você de volta!</p>
+
+        <form action="login.php" method="post">
+
+          <div class="campo">
+
+            <span class="material-symbols-outlined">account_circle</span>
+            <input type="email" name="login" id="ilogin" placeholder="seu email" required autocomplete="email">
+            <label for="ilogin">email</label>
+
+          </div>
+
+          <div class="campo">
+
+            <span class="material-symbols-outlined">password</span>
+            <input type="password" name="senha" id="isenha" minlength="8" maxlength="20"
+              placeholder="senha super secreta" required autocomplete="current-password">
+            <label for="isenha">Senha</label>
+          </div>
+
+          <input type="submit" value="entrar">
+
+          <a href="#">xii! esqueci minha senha :&#40</a>
+        </form>
+      </div>
     </section>
   </main>
 </body>

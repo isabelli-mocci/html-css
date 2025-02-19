@@ -71,7 +71,7 @@ main {
 */
 #imagem {
   display: block;
-  background: url('../img/astronauta.png') no-repeat;
+  background: url('../img/astronauta.png') no-repeat center center;
   background-size: contain;
   height: 140px;
 }
@@ -99,4 +99,13 @@ main {
 #formulario {
   display: block;
   padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 0.8em;
 }
