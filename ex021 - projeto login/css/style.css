@@ -25,7 +25,7 @@
 */
 :root {
   /* Paleta de cores */
-  --color-principal: #70D5E0;
+  --color-principal: #00bbcf;
   --color-secundaria: #70B2E0;
   --color-text: #222;
 
@@ -83,7 +83,7 @@ main {
 */
 #login {
   position: relative;
-  width: 250px;
+  width: 265px;
   height: 500px;
   top: 50%;
   left: 50%;
@@ -94,6 +94,7 @@ main {
   box-shadow: 1px 1px 10px 2px #00000086;
   border-radius: 30px;
   transition: all .3s ease;
+  text-align: center;
 }
 
 #formulario {
@@ -108,4 +109,42 @@ h1 {
 
 p {
   font-size: 0.8em;
+}
+
+.campo {
+  background-color: var(--color-principal);
+  border-radius: 8px;
+  height: 40px;
+  margin: 5px 0;
+}
+
+label {
+  display: none;
+}
+
+input[type=submit] {
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: var(--color-principal);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #17afc0cc;
+}
+
+a {
+  display: block;
+  text-align: center;
+  font-size: .8em;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-secundaria);
 }
