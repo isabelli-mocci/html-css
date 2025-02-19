@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* 
+Typical Device Breakpoints
+---------------------------------
+    DISPOSITIVO       MAX-WIDTH
+---------------------------------
+⭐ Mobile Mini           320px
+📱 Mobile Pequeno	       480px
+📱 Mobile Médio	         576px
+📱 Mobile Grande	       768px
+📲 Tablet               1024px
+💻 Desktop Médio        1280px
+🖥️ Desktop Grande	     1440px
+📺 4K / Ultra-Wide	    2560px+ 
+---------------------------------
+*/
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  #login {
+    width: 80vw;
+  }
+
+  #imagem {
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
+
+  #formulario {
+    float: right;
+    width: 70%;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+
+  #login {
+    width: 850px;
+  }
+
+  #imagem {
+    float: left;
+    width: 30%;
+    height: 100%;
+  }
+
+  #formulario {
+    float: right;
+    width: 50%;
+  }
+}

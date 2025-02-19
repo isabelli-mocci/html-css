@@ -57,6 +57,7 @@ html,
 body {
   background: linear-gradient(to right, #414345, #232526);
   -webkit-linear-gradient(to right, #414345, #232526);
+  overflow-x: hidden;
 }
 
 main {
@@ -92,12 +93,10 @@ main {
   background-color: white;
   box-shadow: 1px 1px 10px 2px #00000086;
   border-radius: 30px;
+  transition: all .3s ease;
 }
 
 #formulario {
   display: block;
   padding: 10px;
 }
-
-
-
