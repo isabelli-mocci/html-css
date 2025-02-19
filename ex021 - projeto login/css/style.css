@@ -74,6 +74,7 @@ main {
   background: url('../img/astronauta.png') no-repeat center center;
   background-size: contain;
   height: 140px;
+  margin-top: 25px;
 }
 
 /* 
@@ -87,14 +88,21 @@ main {
   height: 500px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  
 
   overflow: hidden;
   background-color: white;
   box-shadow: 1px 1px 10px 2px #00000086;
   border-radius: 30px;
-  transition: all .3s ease;
   text-align: center;
+  transition: all .3s ease;
+  transform: translate(-50%, -50%);
+}
+
+.material-symbols-outlined {
+  margin-left: px;
+  color: white;
+  font-size: 32px;
 }
 
 #formulario {
@@ -104,11 +112,13 @@ main {
 
 h1 {
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  color: rgb(204, 65, 65);
 }
 
 p {
   font-size: 0.8em;
+  margin: 15px 0;
 }
 
 .campo {
@@ -116,10 +126,27 @@ p {
   border-radius: 8px;
   height: 40px;
   margin: 5px 0;
+  border: 2px solid var(--color-principal);
 }
 
 label {
   display: none;
+}
+
+input {
+  background-color: aliceblue;
+  font-size: 1em;
+  width: calc(100% - 29px);
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  transform: translateY(-1px);
+}
+
+input:focus {
+  border: 1px solid #1c93a38e;
+  outline: none;
 }
 
 input[type=submit] {
@@ -132,6 +159,7 @@ input[type=submit] {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  margin: 25px 0;
 }
 
 input[type=submit]:hover {
@@ -147,4 +175,8 @@ a {
   border-radius: 8px;
   text-decoration: none;
   color: var(--color-secundaria);
+}
+
+a:hover {
+  text-decoration: underline;
 }

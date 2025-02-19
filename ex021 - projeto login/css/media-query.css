@@ -27,11 +27,24 @@ Typical Device Breakpoints
     float: left;
     width: 30%;
     height: 100%;
+    margin: 0;
   }
 
   #formulario {
     float: right;
     width: 70%;
+  }
+
+  h1 {
+    margin: 40px 0;
+  }
+
+  p {
+    margin: 30px 0;
+  }
+
+  input[type=submit] {
+    margin: 40px 0;
   }
 }
 
@@ -46,6 +59,7 @@ Typical Device Breakpoints
     float: right;
     width: 30%;
     height: 100%;
+    margin: 0;
   }
 
   #formulario {
@@ -55,9 +69,15 @@ Typical Device Breakpoints
 
   h1 {
     font-size: 1.5em;
+    margin: 40px 0;
   }
   
   p {
     font-size: 1.1em;
+    margin: 30px 0;
+  }
+
+  input[type=submit] {
+    margin: 40px 0;
   }
 }
