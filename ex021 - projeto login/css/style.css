@@ -56,8 +56,8 @@ main {
 html,
 body {
   background: linear-gradient(to right, #414345, #232526);
-  -webkit-linear-gradient(to right, #414345, #232526);
   overflow-x: hidden;
+  height: 100%;
 }
 
 main {
