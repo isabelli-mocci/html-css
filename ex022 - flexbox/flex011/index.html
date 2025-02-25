@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexible Box</title>
+  <style>
+    .container {
+      background-color: tan;
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    .item {
+      background-color: ivory;
+      border: 1px solid brown;
+      text-align: center;
+      flex-basis: 150px;
+    }
+
+    #i1 {
+      flex-shrink: 1;
+      flex-grow: 0;
+    }
+
+    #i2 {
+      flex-shrink: 0;
+      flex-grow: 2;
+    }
+
+    #i3 {
+      flex-shrink: 2;
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item" id="i1">Padrão</div>
+    <div class="item" id="i2">Não encolhe e cresce mt</div>
+    <div class="item" id="i3">Mt pq e cresce</div>
+  </div>
+</body>
+
+</html>
