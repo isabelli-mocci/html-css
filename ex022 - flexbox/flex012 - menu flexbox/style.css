@@ -1,0 +1,82 @@
+/* 
+---------------------------------------------
+01. charset type
+--------------------------------------------- 
+*/
+@charset "UTF-8";
+
+/* 
+---------------------------------------------
+02. global var
+--------------------------------------------- 
+*/
+:root {
+    /* Paleta de cores */
+    --color-body: lightgray;
+    --color-header: gray;
+    --color-main: WhiteSmoke;
+    --color-text: #222;
+
+    /* Tipografia */
+    --font-principal: Verdana, sans-serif;
+}
+
+/* 
+---------------------------------------------
+03. reset
+--------------------------------------------- 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+---------------------------------------------
+04. body style
+--------------------------------------------- 
+*/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-body);
+    color: var(--color-text);
+    font-family: var(--font-principal);
+    font-size: 1em;
+}
+
+/* 
+---------------------------------------------
+05. header style
+--------------------------------------------- 
+*/
+
+header {
+    padding: 10px;
+    background-color: var(--color-header);
+    color: white;
+}
+
+header>h1 {
+    border: 1px dotted white;
+}
+
+header>nav {
+    border: 1px dotted white;
+}
+
+/* 
+---------------------------------------------
+06. main style
+--------------------------------------------- 
+*/
+
+main {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.185);
+    background-color: var(--color-main);
+}
