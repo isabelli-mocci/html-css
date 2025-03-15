@@ -127,10 +127,10 @@ e responsividade. Aqui embaixo tem o conteúdo organizado por módulo, só segui
 </div>
 
 <!-- Links úteis -->
-## 🚀 Links Úteis  
+## 🔗 Links Úteis 
 Aqui estão alguns links que turbinaram meu aprendizado e complementaram o curso:  
 
-- 🔗 [Curso HTML5 e CSS3 - Curso em Vídeo](https://www.cursoemvideo.com/curso/html5-css3-modulos/)  
+- 🎓 [Curso HTML5 e CSS3 - Curso em Vídeo](https://www.cursoemvideo.com/curso/html5-css3-modulos/)  
 - 📚 [Documentação Oficial do HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)  
 - 🎨 [Documentação Oficial do CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)  
 - 🛠️ [Can I Use – Para conferir compatibilidade de CSS](https://caniuse.com/)  
@@ -140,11 +140,39 @@ Aqui estão alguns links que turbinaram meu aprendizado e complementaram o curso
 <!-- DIVISÓRIA -->
 <div align="center">
   <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=d83a7c">
-</div>
+</div> 
 
 <!-- Projetos destaque -->
+## 🔑 Projeto: Página de Login
 
-<!-- Próximos passos -->
+> [!NOTE]\
+> *O projeto abaixo faz parte do curso de HTML5 e CSS3 do Curso em Video e está localizado na pasta ['ex021-projeto-login'](https://github.com/isabelli-mocci/login-screen) deste repositório.* <br><br>
+
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/c5c6b20d-c7cf-4ed8-95fe-5fb813ec1712" width="500">
+</div> <br><br>
+
+<div align="center">
+    
+Esse projeto é uma **página de login** feita **100% com HTML e CSS** para treinar **media queries**!✨ No momento dessa prática, **Flexbox** e **Grid Layout** ainda não tinham sido abordados no curso, então usamos **float** para garantir a responsividade. <br><br>
+
+</div>
+
+### ✨ O que tem de legal no projeto:
+- **Design minimalista**: Só o essencial, sem excessos.
+- **Responsividade**: A página fica ótima tanto no celular quanto no desktop.
+- **Usabilidade**: O formulário é bem intuitivo e fácil de usar. <br><br>
+
+> [!TIP]\
+> _*Para aplicar o que aprendi de **Flexbox**, eu refiz esse projeto em uma versão moderninha... quer ver a nova versão?*_  <br>
+> _*O código tá lá no meu repositório: [GitHub - Login Screen](https://github.com/isabelli-mocci/login-screen)*_  
+> _*E a versão ao vivo é só clicar aqui: [Login Screen Demo](https://isabelli-mocci.github.io/login-screen/)*_
+<br><br>
+
+<!-- DIVISÓRIA -->
+<div align="center">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=d83a7c">
+</div>
 
 <!-- Sobre a licença -->
 ## 🔓  Sobre o uso do repositório: <br>
@@ -153,7 +181,6 @@ Aqui estão alguns links que turbinaram meu aprendizado e complementaram o curso
 > 
 > Esse repositório é open-source, então pode pegar, adaptar e distribuir sem crise!  
 > Só não esquece que o conteúdo original pertence ao Profº **Gustavo Guanabara** e ele merece os créditos! 😉
-
 
 <!-- DIVISÓRIA -->
 <div align="center">
