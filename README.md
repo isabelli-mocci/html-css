@@ -9,7 +9,7 @@
 🔗 • https://getemoji.com
 -->
 
-<!-- Cabeçalho do Repositório -->
+<!-- HEAD -->
 <div align="center">
     <a href="https://github.com/isabelli-mocci/html-css/blob/main/assets-readme/html-css-pink.png">
         <img src="https://raw.githubusercontent.com/isabelli-mocci/html-css/refs/heads/main/assets-readme/html-css-pink.png" alt="HTML and CSS pics" width="200px" title="Repositório do Curso de HTML5 e CSS3">
@@ -17,7 +17,14 @@
     <h1 align="center">HTML5 & CSS3</h1>
 </div>
 
-<!-- Apresentação do Repositório -->
+<!-- DIVISÓRIA -->
+<div align="center">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=d83a7c">
+</div>
+
+<br>
+
+<!-- BODY -->
 <div align="center">
   
   Esse repositório é tipo meu 'grimório' de estudos e prática em desenvolvimento web! 🌐✨ Aqui tem exercícios, <br>
@@ -27,18 +34,27 @@
   
 </div>
 
-<!-- DIVISÓRIA -->
+<hr>
+
+<!-- Detalhes do Curso: -->
 <div align="center">
-  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=38bdae">
+  
+###  Tecnologias Utilizadas:
+📌 **HTML5** • **CSS3** • **Git** • **GitHub** • **Markdown** • **VSCode**  
+
 </div>
 
-<!-- ----------------------------------------- -->
+<!-- DIVISÓRIA -->
+<div align="center">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=d83a7c">
+</div>
+
 <!-- Estrutura do Repositório -->
-<!-- info: como clonar o repositório -->
-<h2 align="left">📂 Conhecendo o repositório</h2>
 
-A navegação das pastas deste respositório segue a estrutura abaixo:
+<h2 align="left">📂 Organização do repositório:</h2><br>
 
+A navegação das pastas deste respositório segue a estrutura abaixo:<br>
+<br>
 
 ```
 /html-css
@@ -58,27 +74,18 @@ A navegação das pastas deste respositório segue a estrutura abaixo:
 <br>
 
 > [!NOTE]\
-> *Sabia que para visualizar os projetos daqui no seu pc, é fácil?!✨ Basta [**clonar**](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository)* este repositório e abrir os arquivos `.html` em seu navegador favorito. 
+> *Sabia que para visualizar os projetos daqui no seu pc, é fácil?!✨ Basta [**clonar**](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository)* este repositório e abrir os arquivos `.html` em seu navegador favorito. <br><br>
 
 <!-- DIVISÓRIA -->
 <div align="center">
-  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=38bdae">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=d83a7c">
 </div>
 
-<!-- Detalhes do Curso: -->
+<!-- Detalhes sobre o curso -->
+## 📚 Conteúdo Programático <br><br>
 
-<h2 align="left">✨ Detalhes do Curso</h2>
-
-<div align="center">
-  
-### 🚀 Tecnologias Utilizadas  
-📌 **HTML5** • **CSS3** • **Git** • **GitHub** • **Markdown** • **VSCode**  
-
-</div>
-
-<hr>
-
-## 📚 Conteúdo Programático  
+O curso tá dividido em 5 módulos, começando com os fundamentos de HTML e CSS e indo até as skills avançadas de design, versionamento <br>
+e responsividade. Aqui embaixo tem o conteúdo organizado por módulo, só seguir a jornada! 🚀 <br><br>
 
 ### 📖 Módulo 1 – Fundamentos do HTML e CSS  
 ✔️ Estrutura básica do HTML  
@@ -103,35 +110,98 @@ A navegação das pastas deste respositório segue a estrutura abaixo:
 ✔️ Construção de formulários completos *(inputs, labels, GET/POST)*  
 ✔️ Criação de menus e telas de login responsivas  
 
-### 📐 Módulo 5 – Layouts Responsivos com Flexbox  
-✔️ Introdução ao Flexbox  
-✔️ Direções, eixos e alinhamento  
-✔️ **Projeto Prático:** Menu hambúrguer com Media Queries  
+### 📐 Módulo 5 – Flexbox e Grid Layout  
+✔️ Introdução ao Flexbox   
 ✔️ Introdução ao Grid Layout  
+✔️ Direções, eixos e alinhamento 
+
+ ---
+
+<!-- Recado sobre o curso -->
+> [!IMPORTANT]\
+> *O módulo 5 tem alguns updates pendentes, mas assim que o Profº Guanabara liberar os novos episódios do curso, vou atualizar aqui!*
 
 <!-- DIVISÓRIA -->
 <div align="center">
-  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=38bdae">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=d83a7c">
 </div>
 
-<br> 
+<!-- Links úteis -->
+## 🚀 Links Úteis  
+Aqui estão alguns links que turbinaram meu aprendizado e complementaram o curso:  
 
-<!-- AUTHOR -->
-> [!IMPORTANT]\
-> *Atualizações em breve!*
+- 🔗 [Curso HTML5 e CSS3 - Curso em Vídeo](https://www.cursoemvideo.com/curso/html5-css3-modulos/)  
+- 📚 [Documentação Oficial do HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)  
+- 🎨 [Documentação Oficial do CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)  
+- 🛠️ [Can I Use – Para conferir compatibilidade de CSS](https://caniuse.com/)  
+- 🔥 [Flexbox Froggy – Jogo para aprender Flexbox](https://flexboxfroggy.com/#pt-br)  
+- 🏗️ [CSS Grid Garden – Jogo para aprender Grid Layout](https://cssgridgarden.com/#pt-br)  
 
-
-
-----
-<br> 
-
-<!-- <div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Sue+Ellen+Francisco&size=40&duration=1&pause=99999&color=499627&center=true&vCenter=true&repeat=false&width=620&height=60&lines=Obrigado+por+visitar%2C+e+até+a+próxima!" alt="TypingGoodbye-SVG" title="Boas venturas e volte sempre que precisar! ;)"/>
-  </a>
-</div>-->
-
+<!-- DIVISÓRIA -->
 <div align="center">
-  Feito com 🩷 por <a href="https://github.com/isabelli-mocci"> Isabelli Mocci</a>.
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=d83a7c">
 </div>
 
+<!-- Projetos destaque -->
+
+<!-- Próximos passos -->
+
+<!-- Sobre a licença -->
+## 🔓  Sobre o uso do repositório: <br>
+
+> 🏆 **MIT License na área!**
+> 
+> Esse repositório é open-source, então pode pegar, adaptar e distribuir sem crise!  
+> Só não esquece que o conteúdo original pertence ao Profº **Gustavo Guanabara** e ele merece os créditos! 😉
+
+
+<!-- DIVISÓRIA -->
+<div align="center">
+  <img width=100% align="center" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=d83a7c">
+</div>
+<br><br> 
+<!-- FOOTER -->
+
+<!-- Despedida... -->
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Indie+Flower&size=30&duration=1&pause=99999&color=D33584&center=true&vCenter=true&repeat=false&width=620&height=60&lines=Obrigada+pela+visita...+Até+logo%21" alt="Goodbye Dev" title="Não se esqueça, sempre há mais código a ser escrito!" />
+  </a>
+</div>
+
+<!-- DIVISÓRIA -->
+<div align="center">
+  <img width=45% align="center" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=d83a7c">
+</div> <br> 
+
+<!-- Criado por... -->
+<div align="center">
+  Feito com 🩷 por <a href="https://github.com/isabelli-mocci"> Isabelli Mocci</a>
+</div> <br>
+
+<!-- Assinatura -->
+<table align="center">
+  <tr>
+    <td align="center" width="150px">
+      <a href="https://github.com/isabelli-mocci">
+        <img src="https://avatars.githubusercontent.com/u/191166352?v=4" width="100px" style="border-radius: 50%;" alt="Isabelli Mocci Avatar"/>
+        <br>
+      </a>
+    </td>
+    <td align="left" style="padding-left: 15px;">
+      <p><strong>📬 Entre em contato:</strong></p>
+      <p>
+        <a href="https://www.linkedin.com/in/isabelli-mocci/" target="_blank" style="text-decoration: none;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="18px" alt="LinkedIn">
+          <span>LinkedIn - Isabelli Cristina Mocci</span>
+        </a>
+      </p>
+      <p>
+        <a href="mailto:isabellimocci.tech@gmail.com" style="text-decoration: none;">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="18px" alt="Email">
+          <span>Email - isabellimocci.tech@gmail.com</span>
+        </a>
+      </p>
+    </td>
+  </tr>
+</table>
