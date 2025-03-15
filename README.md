@@ -27,10 +27,9 @@
 <!-- BODY -->
 <div align="center">
   
-  Esse repositório é tipo meu 'grimório' de estudos e prática em desenvolvimento web! 🌐✨ Aqui tem exercícios, <br>
-  projetos hands-on e anotações pra revisar os fundamentos essenciais de HTML5 e CSS3 de um jeito organizado e <br>
-  direto ao ponto. O conteúdo  daqui vem do curso "HTML5 e CSS3", oferecido pelo [**Curso em Video**](https://www.cursoemvideo.com/cursos/) e ministrado pelo
-  <br>[**Gustavo Guanabara**](https://github.com/gustavoguanabara/html-css)! 🚀
+  Bem vindo(a) ao meu 'grimório' de estudos em desenvolvimento web! 🌐✨ Aqui tem exercícios, projetos hands-on <br>
+  e anotações pra revisar os fundamentos essenciais de HTML5 e CSS3 de um jeito organizado e direto ao ponto. <br>
+  O conteúdo  daqui vem do curso "HTML5 e CSS3", oferecido pelo [**Curso em Video**](https://www.cursoemvideo.com/cursos/) e ministrado pelo [**Gustavo Guanabara**](https://github.com/gustavoguanabara/html-css)! 🚀
   
 </div>
 
@@ -53,7 +52,7 @@
 
 <h2 align="left">📂 Organização do repositório:</h2><br>
 
-A navegação das pastas deste respositório segue a estrutura abaixo:<br>
+A navegação das pastas deste repositório segue a estrutura abaixo:<br>
 <br>
 
 ```
@@ -84,8 +83,8 @@ A navegação das pastas deste respositório segue a estrutura abaixo:<br>
 <!-- Detalhes sobre o curso -->
 ## 📚 Conteúdo Programático <br><br>
 
-O curso tá dividido em 5 módulos, começando com os fundamentos de HTML e CSS e indo até as skills avançadas de design, versionamento <br>
-e responsividade. Aqui embaixo tem o conteúdo organizado por módulo, só seguir a jornada! 🚀 <br><br>
+👉🏼 O curso foi dividido em 5 módulos, começando com os fundamentos de HTML e CSS e indo até skills avançadas de design, versionamento <br>
+e responsividade. Aqui embaixo tem o conteúdo organizado por módulo: <br><br>
 
 ### 📖 Módulo 1 – Fundamentos do HTML e CSS  
 ✔️ Estrutura básica do HTML  
